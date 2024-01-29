@@ -1,4 +1,3 @@
-
 /*
 let texte1 = "OFPPT";
 texte1 += " ";
@@ -41,11 +40,12 @@ if (!statut) {
 let valide = true;
 
 if (!valide) {
-    console.log("ce stagiaire nest pas inscrit")
+  console.log("ce stagiaire nest pas inscrit");
 }
 
 let test;
-console.log(test)
+console.log(test);
 if (!test) {
-    console.log("okkk undefined")
+  console.log("okkk undefined");
 }
+let test;
