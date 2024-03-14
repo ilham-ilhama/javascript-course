@@ -1,0 +1,11 @@
+
+form{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+form button{
+    width: 100px;
+    height: 30px;
+  
+}

@@ -1,0 +1,33 @@
+form{
+    width: 30%;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+}
+form input{
+    width: 200px;
+    height: 30px;
+}
+form select{
+    width: 200px;
+    height: 30px;
+}
+#btn_ajouter{
+    width: 150px;
+    height: 30px;
+    background-color: green;
+}
+#btn_supprimer{
+    width: 150px;
+    height: 30px;
+    background-color: red;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
