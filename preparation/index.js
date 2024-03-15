@@ -70,18 +70,34 @@ let students = 30;
 
 // console.log(age, typeof age);
 
-let x = "pizza";
-let y = "pizza";
-let z = "pizza";
+// let x = "pizza";
+// let y = "pizza";
+// let z = "pizza";
 
-x = Number(x);
-y = String(y);
-z = Boolean(z);
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z);
 
 
-console.log(x, typeof x);
-console.log(y, typeof y);
-console.log(z, typeof z);
+// console.log(x, typeof x);
+// console.log(y, typeof y);
+// console.log(z, typeof z);
+
+
+//const = a varibale that can't  be changed
+const PI = 3.14159;
+let radius;
+let circumfrence;
+
+document.getElementById("mySubmit").onclick = function () {
+    radius = document.getElementById("mytexte").value;
+    radius = Number(radius);
+    circumfrence = 2 * PI * radius;
+    document.getElementById("myH3").textContent = circumfrence + "cm";
+}
+
+
+
 
 
 
