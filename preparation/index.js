@@ -43,14 +43,27 @@ let students = 30;
 //students++;
 //students--;
 
-console.log(students);
+// console.log(students);
+
+// how to accept user input
+
+//window prompt
+//html textbox
+
+// let username  = window.prompt("what's your username");
+// console.log(username)
+
+//en click a une chose est changer autre chose
+// let username;
+// document.getElementById("mySubmit").onclick = function () {
+//     username = document.getElementById("myTexte").value;
+//     document.getElementById("myH1").textContent =`hello ${username}`
+// }
 
 
 
 
-
-
-
+//change the datatype of value to another 
 
 
 
