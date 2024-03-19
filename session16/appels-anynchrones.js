@@ -38,7 +38,7 @@
 
 //appel  anynschrones//promise
 
-//const stagiaire = getData().then(function)
+// const stagiaire = getData().then(function)
 
 //consomateur de la promis
 const stagiaire2 = [];
@@ -84,4 +84,43 @@ document.getElementById("afficherbtn").addEventListener("click", function () {
     .then(function (data) {
       console.log(data);
     });
+  
 });
+const stagiaire = getData()
+  .then(function (responce) {
+    console.log(responce);
+
+    return getNotes();
+  })
+  .then(function (responce) {
+    console.log(responce);
+    stagiaire2 = responce.filter(function (itemValue) {
+      return itemValue.idStagiaire === 2;
+    });
+    console.log(responce);
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .finally(function () {
+    console.log("finally!!!!!!!!!!")
+  });
+
+//gestion des exceptions(erreurs)
+//async await method
+async function executerCeCode() {
+  try {
+    const stagiaires = await getStagiaires();
+    const module = await getModule();
+    const notes = await getNotes();
+    console.log(stagiaires);
+    console.log(module);
+    console.log(notes)
+  }
+  catch (err) {
+    console.log(err);
+
+  } finally {
+    console.log("remove loading...")
+  }
+};

@@ -13,4 +13,7 @@ const stagiaire = getData()
   })
   .catch(function (error) {
     console.log(error);
+  })
+  .finally(function () {
+    console.log("finally!!!!!!!!!!")
   });
